@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up form</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #384047;
+            background-color:#dbe5ee;
+
+        }
+        form{
+            background-color:#f4f7f8;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div>
+            <form action="" method="">
+                <h1>Sign Up</h1>
+                <legend><span class="number">1</span> Your Basic Info</legend>
+      
+                <label for="name">Name:</label>
+                <input type="text" name="user_name" id="name" placeholder="Enter Your Name">
+
+                <label for="email">Email:</label>
+                <input type="email" name="user_name" id="mail" placeholder="Enter Your Email">
+
+                <label for="password">Password: </label>
+                <input type="password" name="user_password" id="password" placeholder=" Enter Your Password">
+
+                <label for="age">Age:</label>
+            <input type="radio" name="user_age" id="above_18" value="above_18">
+                <label for="above_18" class="light">Above 18</label><br>
+            <input type="radio" name="user_age" id="below_18" value="below_18">
+                <label for="below_18" class="light">Below 18</label>
+
+                <fieldset>
+                    <legend><span class="number">2</span>Your Profile</legend>
+                    <label for="bio">Boi:</label>
+                    <textarea name="user_bio" id="bio"></textarea>
+
+                    <label for="">Job Role:</label>
+        <select name="" id="">
+            <optgroup>
+                <option value="Select Job">Select Job</option>
+            </optgroup>
+            <optgroup label="Web">
+                <option value="Frontend_Developer">Frontend Developer</option>
+                <option value="Backend_Developer">Backend Developer</option>
+                <option value="Python_Developer">Python Developer</option>
+                <option value="Php_Developer">Php Developer</option>
+                <option value="rails_Developer">rails Developer</option>
+                <option value="web_desginer">Web Desginer</option>
+                <option value="Wordpress Developer">WordPress Developer</option>
+            </optgroup>
+            <optgroup label="Mobile">
+                <option value="Android_Developer">Android Developer</option>
+                <option value="ios_Developer">Ios Developer</option>
+                <option value="mobile_designer">Mobile Developer</option>
+            </optgroup>
+            <optgroup label="Bussiness">
+                <option value="bussiness_owner">Bussiness Owner</option>
+                <option value="freelancer">Freelancer</option>
+            </optgroup>
+        </select>
+
+                    <label for="interest">Interest:</label>
+                    <input type="checkbox" name="user_interest" id="development" value="interest_development">
+                         <label class="light" for="development">Development</label><br>
+
+                    <input type="checkbox" name="user_interest" id="design" value="interest_development">
+                         <label class="light" for="design">Design</label><br>
+
+                    <input type="checkbox" name="user_interest" id="business" value="interest_development">
+                         <label class="light" for="business">Business</label>
+
+                </fieldset>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
